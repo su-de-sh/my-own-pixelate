@@ -3,6 +3,10 @@ let isMouseDown = false;
 let columnNum;
 function makeRow() {
   //   let columnNum = document.querySelector("#input").value;
+  if (document.querySelector("#help")) {
+    document.querySelector("#help").remove();
+  }
+
   if (!columnNum) {
     columnNum = prompt("Enter the number of column in canvas!!");
   }

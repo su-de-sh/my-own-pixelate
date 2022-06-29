@@ -8,6 +8,11 @@ html {
   color: white;
 }
 
+#help{
+ font-size:10px ;
+ 
+}
+
 body {
   display: flex;
   flex-direction: column;
