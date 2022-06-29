@@ -15,11 +15,16 @@ function makeRow() {
   table.appendChild(row);
 }
 
-document.querySelector("#add-row").addEventListener("click", function () {
-  makeRow();
-});
-
-document.querySelector("#table").addEventListener("click", function (e) {
-  e.target.classList.toggle("red");
+function colorize(e) {
+  color = document.querySelector("select").value;
+  console.log(color);
+  //   if (e.target.className) {
+  //     e.target.className = "";
+  //   } else
+  e.target.className = color;
   console.log(e.target);
-});
+}
+
+document.querySelector("#add-row").addEventListener("click", makeRow);
+
+document.querySelector("#table").addEventListener("click", colorize);
