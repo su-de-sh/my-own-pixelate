@@ -18,3 +18,8 @@ function makeRow() {
 document.querySelector("#add-row").addEventListener("click", function () {
   makeRow();
 });
+
+document.querySelector("#table").addEventListener("click", function (e) {
+  e.target.classList.toggle("red");
+  console.log(e.target);
+});

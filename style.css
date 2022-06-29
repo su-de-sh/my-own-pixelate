@@ -24,3 +24,21 @@ td{
 input{
   width:50px
 }
+
+.red{
+  background-color: red;
+}
+.cyan{
+  background-color: cyan;
+}
+.voilet{
+  background-color: rgb(9, 44, 245);
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.lightgreen{
+  background-color: lightgreen;
+}
