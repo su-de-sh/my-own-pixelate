@@ -17,12 +17,11 @@ function makeRow() {
 
 function colorize(e) {
   color = document.querySelector("select").value;
-  console.log(color);
-  //   if (e.target.className) {
-  //     e.target.className = "";
-  //   } else
-  e.target.className = color;
-  console.log(e.target);
+
+  if (e.target.nodeName === "TD") {
+    e.target.className = color;
+  }
+  console.dir(e.target);
 }
 
 document.querySelector("#add-row").addEventListener("click", makeRow);
