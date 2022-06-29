@@ -19,9 +19,11 @@ function colorize(e) {
   color = document.querySelector("select").value;
 
   if (e.target.nodeName === "TD") {
-    e.target.className = color;
+    console.log(e.target.classList);
+    if (e.target.className === color) {
+      e.target.className = "";
+    } else e.target.className = color;
   }
-  console.dir(e.target);
 }
 
 document.querySelector("#add-row").addEventListener("click", makeRow);
